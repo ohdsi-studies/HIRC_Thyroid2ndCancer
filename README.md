@@ -1,5 +1,5 @@
-Iodine131Thyroid2ndCancerRisk
-==============================
+Evaluating of Iodine-131 exposure effect on the occurrence of secondary cancer in survivors of thyroid cancer
+=============================================================================================================
 <img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized">
 
 - Analytics use case(s): Population-Level Estimation

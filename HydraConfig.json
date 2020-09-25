@@ -5,11 +5,11 @@
 	"actions":[{
 		"type": "fileNameFindAndReplace",
 		"input": "packageName",
-		"find": "Iodine131Thyroid2ndCancerRisk"
+		"find": "thyroid2ndCx"
 	},{
 		"type": "stringFindAndReplace",
 		"input": "packageName",
-		"find": "Iodine131Thyroid2ndCancerRisk"
+		"find": "thyroid2ndCx"
 	},{
 		"type": "jsonArrayToCsv",
 		"input": "cohortDefinitions",

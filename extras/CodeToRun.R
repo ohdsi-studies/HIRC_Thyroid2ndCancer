@@ -1,4 +1,4 @@
-library(Iodine131Thyroid2ndCancerRisk)
+library(thyroid2ndCx)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
 options(fftempdir = "s:/FFtemp")
@@ -7,7 +7,7 @@ options(fftempdir = "s:/FFtemp")
 maxCores <- parallel::detectCores()
 
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "s:/Iodine131Thyroid2ndCancerRisk"
+outputFolder <- "s:/thyroid2ndCx"
 
 # Details for connecting to the server:
 connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "pdw",

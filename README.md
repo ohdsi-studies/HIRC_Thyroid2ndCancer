@@ -1,15 +1,15 @@
-Iodine131Thyroid2ndCancerRisk
-==============================
-<img src="https://img.shields.io/badge/Study%20Status-Repo%20Created-lightgray.svg" alt="Study Status: Repo Created">
+Evaluating of Iodine-131 exposure effect on the occurrence of secondary cancer in survivors of thyroid cancer
+=============================================================================================================
+<img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized">
 
 - Analytics use case(s): Population-Level Estimation
 - Study type: Clinical Application
-- Tags: Thyroid2ndCancer
+- Tags: Iodine131therapy, ThyroidSecondaryCancer
 - Study lead: Hoyoung Lee, Sooyoung Yoo
 - Study lead forums tag: **[Sooyoung Yoo](https://forums.ohdsi.org/u/sooyoung_yoo)**
 - Study start date: July 15, 2020
 - Study end date: 
-- Protocol: **[Protocol](https://github.com/SHUBH-HIRC/HIRC_Thyroid2ndCancer/blob/master/documents/protocol_Iodine131Thyroid2ndCancerRisk.docx)**
+- Protocol: **[Protocol](https://github.com/ohdsi-studies/HIRC_Thyroid2ndCancer/blob/master/documents/protocol_Iodine131Thyroid2ndCancerRisk.docx)**
 - Publications: 
 - Results explorer:
 

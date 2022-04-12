@@ -1,7 +1,4 @@
 atlasId,atlasName,cohortId,name
-1662,Thyroidectomy with I-131therapy_all,1662,Thyroidectomy_with_I131therapy_all
-1663,Only thyroidectomy_All,1663,Only_thyroidectomy_All
-1670,Overall cancer w/o thyroid cancer_all,1670,Overall_cancer_wo_thyroid_cancer_all
-1703,Thyroidectomy with I-131therapy_mal,1703,Thyroidectomy_with_I131therapy_mal
-1704,Only thyroidectomy_mal,1704,Only_thyroidectomy_mal
-1705,Overall cancer w/o thyroid cancer_mal,1705,Overall_cancer_wo_thyroid_cancer_mal
+3381,thyroid target cohort,3381,thyroid_target_cohort
+3382,thyroid comparator cohort,3382,thyroid_comparator_cohort
+2603,overall cacner without thyroidCx,2603,overall_cacner_without_thyroidCx

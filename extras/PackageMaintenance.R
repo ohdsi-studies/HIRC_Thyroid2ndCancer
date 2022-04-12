@@ -1,6 +1,6 @@
-# Copyright 2019 Observational Health Data Sciences and Informatics
+# Copyright 2020 Observational Health Data Sciences and Informatics
 #
-# This file is part of thyroid2ndCx
+# This file is part of thyroidCxSPM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
 
 # Format and check code ---------------------------------------------------
 OhdsiRTools::formatRFolder()
-OhdsiRTools::checkUsagePackage("thyroid2ndCx")
+OhdsiRTools::checkUsagePackage("thyroidCxSPM")
 OhdsiRTools::updateCopyrightYearFolder()
 devtools::spell_check()
 
 # Create manual -----------------------------------------------------------
-shell("rm extras/thyroid2ndCx.pdf")
-shell("R CMD Rd2pdf ./ --output=extras/thyroid2ndCx.pdf")
+unlink("extras/thyroidCxSPM.pdf")
+shell("R CMD Rd2pdf ./ --output=extras/thyroidCxSPM.pdf")
 
 # Create vignettes ---------------------------------------------------------
 rmarkdown::render("vignettes/UsingSkeletonPackage.Rmd",
@@ -38,12 +38,12 @@ rmarkdown::render("vignettes/DataModel.Rmd",
                                           number_sections = TRUE))
 
 # Insert cohort definitions from ATLAS into package -----------------------
-OhdsiRTools::insertCohortDefinitionSetInPackage(fileName = "CohortsToCreate.csv",
-                                                baseUrl = Sys.getenv("baseUrl"),
-                                                insertTableSql = TRUE,
-                                                insertCohortCreationR = TRUE,
-                                                generateStats = FALSE,
-                                                packageName = "thyroid2ndCx")
+ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "CohortsToCreate.csv",
+                                                 baseUrl = Sys.getenv("baseUrl"),
+                                                 insertTableSql = TRUE,
+                                                 insertCohortCreationR = TRUE,
+                                                 generateStats = FALSE,
+                                                 packageName = "thyroidCxSPM")
 
 # Create analysis details -------------------------------------------------
 source("extras/CreateStudyAnalysisDetails.R")
@@ -51,4 +51,4 @@ createAnalysesDetails("inst/settings/")
 createPositiveControlSynthesisArgs("inst/settings/")
 
 # Store environment in which the study was executed -----------------------
-OhdsiRTools::insertEnvironmentSnapshotInPackage("thyroid2ndCx")
+OhdsiRTools::createRenvLockFile("thyroidCxSPM")
